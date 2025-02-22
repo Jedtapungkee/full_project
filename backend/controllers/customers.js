@@ -20,7 +20,7 @@ const createCustomer = async (req, res) => {
             message: `User with id ${cust.customer_id} inserted successfully`,
         });
 
-    } catch (error) {
+    } catch (err) {
         res.status(500).json({
             status: "error",
             message: "Error inserting customer",
