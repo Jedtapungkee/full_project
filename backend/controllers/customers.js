@@ -1,6 +1,7 @@
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
 
+
 //insert a new customer
 const createCustomer = async (req, res) => {
     const { customer_id, first_name, last_name, address, email, phone_number } = req.body;
